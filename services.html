@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — QA Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero" style="min-height:55vh;">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1552820728-8b83bb6b2b0a?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>QA <span class="text-gradient">Services</span></h1>
+      <p>Complete testing coverage for every stage of development.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Detailed Service Catalog</h2>
+      <p class="section-subtitle reveal">Each service includes clear deliverables, turnaround estimates, and platform coverage.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;">
+        <div class="card reveal">
+          <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Functional Testing</h3>
+          <p>Verify every mechanic, button, menu, and system works as intended across all game states.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 2-5 days</li>
+            <li>Deliverables: Bug report + coverage matrix</li>
+            <li>Platforms: All</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:var(--neon-glow-purple);color:var(--accent-purple);"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
+          <h3>Gameplay Testing</h3>
+          <p>Play your game like a real user — evaluating fun, difficulty, pacing, and flow.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 3-7 days</li>
+            <li>Deliverables: UX feedback + balance notes</li>
+            <li>Platforms: All</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(34,197,94,0.45);color:#22c55e;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg></div>
+          <h3>Regression Testing</h3>
+          <p>Re-test resolved bugs and affected areas after every patch to prevent regression.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 1-3 days</li>
+            <li>Deliverables: Regression sign-off report</li>
+            <li>Platforms: Per build</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(251,146,60,0.45);color:#fb923c;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <h3>Multiplayer Testing</h3>
+          <p>Network stability, desync detection, matchmaking stress tests, and server load validation.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 3-5 days</li>
+            <li>Deliverables: Netcode report + latency map</li>
+            <li>Platforms: PC, Console</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(60,130,246,0.45);color:#60a5fa;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+          <h3>Compatibility Testing</h3>
+          <p>Validate performance and stability across hardware configurations and OS versions.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 3-6 days</li>
+            <li>Deliverables: Compatibility matrix</li>
+            <li>Platforms: PC, Mobile</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(236,72,153,0.45);color:#ec4899;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3>Mobile Game Testing</h3>
+          <p>Touch accuracy, battery impact, thermal throttling, orientation handling, and store compliance.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 2-4 days</li>
+            <li>Deliverables: Mobile QA report</li>
+            <li>Platforms: iOS, Android</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(139,92,246,0.45);color:#8b5cf6;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Console Testing</h3>
+          <p>PS5, Xbox Series X|S, and Nintendo Switch certification prep with TRCs and XR checks.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 5-10 days</li>
+            <li>Deliverables: Certification checklist + bug report</li>
+            <li>Platforms: PS, Xbox, Switch</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(14,165,233,0.45);color:#0ea5e9;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+          <h3>Steam Build QA</h3>
+          <p>Depot validation, build integrity, Steam Deck verification, and achievement unlock testing.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 2-4 days</li>
+            <li>Deliverables: Steam readiness report</li>
+            <li>Platforms: Steam / PC</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(251,191,36,0.45);color:#fbbf24;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg></div>
+          <h3>UI/UX Testing</h3>
+          <p>Menu navigation, input responsiveness, localization layout, colorblind accessibility, and HUD clarity.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: 2-3 days</li>
+            <li>Deliverables: UX audit + accessibility notes</li>
+            <li>Platforms: All</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <div class="card-icon" style="box-shadow:0 0 8px rgba(244,63,94,0.45);color:#f43f5e;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+          <h3>Bug Documentation</h3>
+          <p>Professional severity classification, repro steps, video evidence, and fix verification tracking.</p>
+          <ul style="margin-top:12px;font-size:0.85rem;color:var(--text-muted);list-style:disc;padding-left:18px;">
+            <li>Turnaround: Ongoing</li>
+            <li>Deliverables: Jira / TestRail exports</li>
+            <li>Platforms: All</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>$(function(){$('#header-placeholder').load('partials/header.html');$('#footer-placeholder').load('partials/footer.html');});</script>
+</body>
+</html>

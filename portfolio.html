@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — QA Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero" style="min-height:55vh;">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1614726365723-49cfae987c3b?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Sample <span class="text-gradient">Reports</span></h1>
+      <p>Professional documentation that developers actually want to read.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title reveal">Bug Report Examples</h2>
+      <p class="section-subtitle reveal">Real-world report formats used across client projects.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:24px;">
+        <div class="bug-card reveal">
+          <div class="bug-card-header"><span style="font-family:var(--font-heading);font-size:0.82rem;">BUG-2026-0847</span><span class="bug-severity severity-critical">Critical</span></div>
+          <div class="bug-card-body">
+            <h4>Save file corruption on Switch sleep mode during autosave</h4>
+            <p><strong>Repro:</strong> 1) Start new game. 2) Reach first checkpoint. 3) Put Switch to sleep mid-autosave. 4) Resume — save slot shows 0% progress and crashes on load.</p>
+            <div class="bug-meta"><span>Platform: Nintendo Switch</span><span>Build: v0.9.2</span><span>Area: Save System</span></div>
+          </div>
+        </div>
+        <div class="bug-card reveal">
+          <div class="bug-card-header"><span style="font-family:var(--font-heading);font-size:0.82rem;">BUG-2026-0712</span><span class="bug-severity severity-high">High</span></div>
+          <div class="bug-card-body">
+            <h4>Achievement "Untouchable" unlocks incorrectly after taking damage</h4>
+            <p><strong>Repro:</strong> 1) Start Level 4. 2) Take damage from first enemy. 3) Complete level without further damage. 4) Achievement triggers erroneously.</p>
+            <div class="bug-meta"><span>Platform: Steam / PC</span><span>Build: v1.0.1</span><span>Area: Achievements</span></div>
+          </div>
+        </div>
+        <div class="bug-card reveal">
+          <div class="bug-card-header"><span style="font-family:var(--font-heading);font-size:0.82rem;">BUG-2026-0655</span><span class="bug-severity severity-medium">Medium</span></div>
+          <div class="bug-card-body">
+            <h4>Subtitle text overflows container in 4:3 aspect ratio</h4>
+            <p><strong>Repro:</strong> 1) Set resolution to 1024x768. 2) Trigger any cutscene with subtitles. 3) Observe last 4-6 characters clipped by dialogue box edge.</p>
+            <div class="bug-meta"><span>Platform: PC</span><span>Build: v0.8.9</span><span>Area: UI / Localization</span></div>
+          </div>
+        </div>
+        <div class="bug-card reveal">
+          <div class="bug-card-header"><span style="font-family:var(--font-heading);font-size:0.82rem;">BUG-2026-0601</span><span class="bug-severity severity-low">Low</span></div>
+          <div class="bug-card-body">
+            <h4>Loading screen tip #17 has a typo: "recieve" instead of "receive"</h4>
+            <p><strong>Repro:</strong> 1) Load any level. 2) Wait for tip #17 to appear (approx 1 in 18 chance). 3) Observe spelling error in second sentence.</p>
+            <div class="bug-meta"><span>Platform: All</span><span>Build: v1.0.0</span><span>Area: Text / Copy</span></div>
+          </div>
+        </div>
+        <div class="bug-card reveal">
+          <div class="bug-card-header"><span style="font-family:var(--font-heading);font-size:0.82rem;">BUG-2026-0589</span><span class="bug-severity severity-high">High</span></div>
+          <div class="bug-card-body">
+            <h4>Boss health bar desyncs in co-op when host disconnects</h4>
+            <p><strong>Repro:</strong> 1) Start co-op session. 2) Engage World 2 boss. 3) Host disconnects at 30% boss HP. 4) Client sees 100% HP restored, fight continues indefinitely.</p>
+            <div class="bug-meta"><span>Platform: Xbox / PC</span><span>Build: v1.1.2</span><span>Area: Multiplayer</span></div>
+          </div>
+        </div>
+        <div class="bug-card reveal">
+          <div class="bug-card-header"><span style="font-family:var(--font-heading);font-size:0.82rem;">BUG-2026-0523</span><span class="bug-severity severity-critical">Critical</span></div>
+          <div class="bug-card-body">
+            <h4>Game crashes to desktop when changing resolution during pause menu</h4>
+            <p><strong>Repro:</strong> 1) Launch game. 2) Start any level. 3) Pause. 4) Open Settings. 5) Change resolution. 6) Click Apply — CTD 100% reproducible.</p>
+            <div class="bug-meta"><span>Platform: PC / DX11</span><span>Build: v0.9.8</span><span>Area: Settings / Rendering</span></div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title reveal" style="margin-top:80px;">Past Projects</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+        <div class="card reveal" style="padding:0;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1519669556878-63bd0c7cb4d4?auto=format&fit=crop&w=600&q=80" alt="Project" style="width:100%;height:180px;object-fit:cover;">
+          <div style="padding:22px;"><h4 style="font-size:1rem;">Neon Abyss</h4><p style="font-size:0.85rem;color:var(--text-muted);">Roguelike | PC, Switch | 312 bugs found</p></div>
+        </div>
+        <div class="card reveal" style="padding:0;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&w=600&q=80" alt="Project" style="width:100%;height:180px;object-fit:cover;">
+          <div style="padding:22px;"><h4 style="font-size:1rem;">Iron Harvest Tactics</h4><p style="font-size:0.85rem;color:var(--text-muted);">Strategy | PC, PS5 | 189 bugs found</p></div>
+        </div>
+        <div class="card reveal" style="padding:0;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1614294149010-2edf5c58e1f2?auto=format&fit=crop&w=600&q=80" alt="Project" style="width:100%;height:180px;object-fit:cover;">
+          <div style="padding:22px;"><h4 style="font-size:1rem;">Starlight Drift</h4><p style="font-size:0.85rem;color:var(--text-muted);">Racing | iOS, Android | 97 bugs found</p></div>
+        </div>
+        <div class="card reveal" style="padding:0;overflow:hidden;">
+          <img src="https://images.unsplash.com/photo-1592155931584-9016c91c44b5?auto=format&fit=crop&w=600&q=80" alt="Project" style="width:100%;height:180px;object-fit:cover;">
+          <div style="padding:22px;"><h4 style="font-size:1rem;">Pixel Knights</h4><p style="font-size:0.85rem;color:var(--text-muted);">Metroidvania | PC, Xbox, Switch | 256 bugs found</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>$(function(){$('#header-placeholder').load('partials/header.html');$('#footer-placeholder').load('partials/footer.html');});</script>
+</body>
+</html>

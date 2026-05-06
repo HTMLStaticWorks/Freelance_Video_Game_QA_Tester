@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — QA Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="hero" style="min-height:55vh;">
+    <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1920&q=80');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Let's <span class="text-gradient">Test Together</span></h1>
+      <p>Submit your build details and I'll reply with a custom test plan within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner" style="max-width:900px;">
+      <h2 class="section-title reveal">Project Inquiry</h2>
+      <p class="section-subtitle reveal">Tell me about your game and testing needs.</p>
+      <form class="reveal" onsubmit="event.preventDefault(); alert('Inquiry submitted! I will contact you within 24 hours.');">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-control" placeholder="Your name" required></div>
+          <div class="form-group"><label class="form-label">Studio Name</label><input type="text" class="form-control" placeholder="Studio or indie name"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div class="form-group"><label class="form-label">Email</label><input type="email" class="form-control" placeholder="your@email.com" required></div>
+          <div class="form-group"><label class="form-label">Phone</label><input type="tel" class="form-control" placeholder="+1 (555) 000-0000"></div>
+        </div>
+        <div class="form-group"><label class="form-label">Game Title</label><input type="text" class="form-control" placeholder="Working title of your game"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div class="form-group">
+            <label class="form-label">Target Platforms</label>
+            <select class="form-control">
+              <option>Steam / PC</option>
+              <option>PlayStation 4/5</option>
+              <option>Xbox Series S/X</option>
+              <option>Nintendo Switch</option>
+              <option>iOS</option>
+              <option>Android</option>
+              <option>Multiple</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Genre</label>
+            <select class="form-control">
+              <option>Action</option>
+              <option>RPG</option>
+              <option>Strategy</option>
+              <option>Puzzle</option>
+              <option>Platformer</option>
+              <option>Racing</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Build Upload Link</label>
+          <input type="url" class="form-control" placeholder="Google Drive, Dropbox, or Itch link">
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+          <div class="form-group">
+            <label class="form-label">Budget Range</label>
+            <select class="form-control">
+              <option>Under $500</option>
+              <option>$500 - $1,000</option>
+              <option>$1,000 - $2,500</option>
+              <option>$2,500 - $5,000</option>
+              <option>$5,000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Desired Timeline</label>
+            <select class="form-control">
+              <option>ASAP (24-48h)</option>
+              <option>Within 1 week</option>
+              <option>Within 2 weeks</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Testing Requirements</label>
+          <textarea class="form-control" rows="5" placeholder="Describe what you need tested: specific mechanics, platforms, compliance requirements, etc."></textarea>
+        </div>
+        <div style="text-align:center;">
+          <button type="submit" class="btn btn-primary" style="width:100%;max-width:400px;">Submit Inquiry</button>
+        </div>
+      </form>
+
+      <h2 class="section-title reveal" style="margin-top:80px;">FAQ</h2>
+      <div style="max-width:800px;margin:0 auto;">
+        <div class="faq-item reveal">
+          <div class="faq-question"><span>How do I send my build securely?</span><svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer">Use the upload link field above with password-protected Google Drive, Dropbox, or Itch.io private builds. All links are handled under NDA.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><span>Do you test early prototypes?</span><svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer">Absolutely. The Starter QA plan is designed specifically for vertical slices, demos, and prototypes needing foundational feedback.</div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question"><span>What payment methods do you accept?</span><svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></div>
+          <div class="faq-answer">PayPal, Stripe (credit/debit), bank transfer, and Wise. Invoices are issued per project or monthly for retainer clients.</div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:60px;">
+        <h3 style="margin-bottom:12px;">Prefer a direct conversation?</h3>
+        <a href="mailto:hello@qastudio.dev" class="btn btn-secondary">Book Free Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>$(function(){$('#header-placeholder').load('partials/header.html');$('#footer-placeholder').load('partials/footer.html');});</script>
+</body>
+</html>
