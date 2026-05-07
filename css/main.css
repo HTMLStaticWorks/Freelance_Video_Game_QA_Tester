@@ -357,208 +357,140 @@ ul,ol { list-style:none; }
   box-shadow: var(--shadow-sm);
 }
 
-/* ---------- Genre Cards ---------- */
+/* ---------- Genre & Platform Cards ---------- */
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
 .genre-card {
-  background: rgba(20,22,35,0.6);
-  border: 1px solid rgba(0,240,255,0.1);
+  position: relative;
   border-radius: var(--radius-md);
-  padding: 24px;
-  text-align: center;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid rgba(0,240,255,0.1);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .genre-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,240,255,0.15), 0 0 20px rgba(0,240,255,0.1);
   border-color: rgba(0,240,255,0.3);
-  box-shadow: 0 10px 30px rgba(0,240,255,0.2);
 }
 
-.genre-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
+.genre-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.genre-card:hover .genre-image {
+  transform: scale(1.1);
+}
+
+.genre-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7), transparent);
   color: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.genre-card h4 {
-  font-size: 1.1rem;
+.genre-overlay h4 {
+  font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--text-main);
+  margin-bottom: 6px;
+  color: #00f0ff;
 }
 
-.genre-card p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
+.genre-overlay p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 0;
 }
 
-/* ---------- Platform Cards ---------- */
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
 .platform-card {
-  background: rgba(20,22,35,0.6);
-  border: 1px solid rgba(139,92,246,0.1);
+  position: relative;
   border-radius: var(--radius-md);
-  padding: 24px;
-  text-align: center;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
+  overflow: hidden;
+  background: var(--card-bg);
+  border: 1px solid rgba(139,92,246,0.1);
+  box-shadow: var(--shadow-md);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .platform-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(139,92,246,0.15), 0 0 20px rgba(139,92,246,0.1);
   border-color: rgba(139,92,246,0.3);
-  box-shadow: 0 10px 30px rgba(139,92,246,0.2);
 }
 
-.platform-logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+.platform-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.platform-card:hover .platform-image {
+  transform: scale(1.1);
+}
+
+.platform-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.7), transparent);
   color: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-.platform-card h4 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--text-main);
-}
-
-.platform-card p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-/* ---------- Certification Cards ---------- */
-.cert-card {
-  background: rgba(20,22,35,0.6);
-  border: 1px solid rgba(0,240,255,0.1);
-  border-radius: var(--radius-md);
-  padding: 24px;
-  text-align: center;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.cert-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(0,240,255,0.3);
-  box-shadow: 0 10px 30px rgba(0,240,255,0.2);
-}
-
-.cert-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  color: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.cert-card h4 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--text-main);
-}
-
-.cert-card p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-/* ---------- Project Cards ---------- */
-.project-card {
-  background: rgba(20,22,35,0.8);
-  border: 1px solid rgba(139,92,246,0.1);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(139,92,246,0.3);
-  box-shadow: 0 15px 40px rgba(139,92,246,0.2);
-}
-
-.project-content {
-  padding: 24px;
-}
-
-.project-badge {
-  display: inline-block;
-  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
-  color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.project-card h4 {
+.platform-overlay h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  margin-bottom: 8px;
-  color: var(--text-main);
+  margin-bottom: 6px;
+  color: #8b5cf6;
 }
 
-.project-meta {
+.platform-overlay p {
   font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 20px;
+  opacity: 0.9;
+  margin: 0;
 }
 
-.project-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 20px;
-}
+/* Animation delays for reveal */
+.genre-card:nth-child(1) { animation-delay: 0.1s; }
+.genre-card:nth-child(2) { animation-delay: 0.2s; }
+.genre-card:nth-child(3) { animation-delay: 0.3s; }
+.genre-card:nth-child(4) { animation-delay: 0.4s; }
+.genre-card:nth-child(5) { animation-delay: 0.5s; }
+.genre-card:nth-child(6) { animation-delay: 0.6s; }
+.genre-card:nth-child(7) { animation-delay: 0.7s; }
+.genre-card:nth-child(8) { animation-delay: 0.8s; }
 
-.stat {
-  text-align: center;
-  padding: 12px;
-  background: rgba(0,240,255,0.05);
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(0,240,255,0.1);
-}
-
-.stat-number {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--accent-cyan);
-  font-family: var(--font-heading);
-}
-
-.stat-label {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-top: 4px;
-}
+.platform-card:nth-child(1) { animation-delay: 0.1s; }
+.platform-card:nth-child(2) { animation-delay: 0.2s; }
+.platform-card:nth-child(3) { animation-delay: 0.3s; }
+.platform-card:nth-child(4) { animation-delay: 0.4s; }
+.platform-card:nth-child(5) { animation-delay: 0.5s; }
+.platform-card:nth-child(6) { animation-delay: 0.6s; }
+.platform-card:nth-child(7) { animation-delay: 0.7s; }
+.platform-card:nth-child(8) { animation-delay: 0.8s; }
 
 /* ---------- Glass Cards (Home 2) ---------- */
 .glass-card {
