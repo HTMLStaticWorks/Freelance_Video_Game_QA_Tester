@@ -592,6 +592,43 @@ ul,ol { list-style:none; }
 @media(max-width:1100px){ .pricing-grid{ grid-template-columns:repeat(2,1fr); } }
 @media(max-width:576px){ .pricing-grid{ grid-template-columns:1fr; } }
 
+/* Mobile & Tablet Centering */
+@media(max-width:768px){
+  .section-inner { text-align: center; }
+  .card { text-align: center; }
+  .timeline-item { text-align: center; }
+  .timeline-item h4 { text-align: center !important; }
+  .timeline-item p { text-align: center !important; }
+  .pricing-card { text-align: center; }
+  .pricing-card h3 { text-align: center; }
+  .pricing-card .price { text-align: center; }
+  .pricing-card ul { text-align: center; }
+  .metric-card { text-align: center; }
+  .footer-brand { text-align: center; justify-content: center; }
+  .footer-grid { text-align: center; }
+  .footer-links { text-align: center; }
+  .footer-newsletter { text-align: center; }
+  .footer-bottom { text-align: center; flex-direction: column; gap: 10px; }
+}
+
+@media(max-width:1100px) and (min-width:769px){
+  .section-inner { text-align: center; }
+  .card { text-align: center; }
+  .timeline-item { text-align: center; }
+  .timeline-item h4 { text-align: center !important; }
+  .timeline-item p { text-align: center !important; }
+  .pricing-card { text-align: center; }
+  .pricing-card h3 { text-align: center; }
+  .pricing-card .price { text-align: center; }
+  .pricing-card ul { text-align: center; }
+  .metric-card { text-align: center; }
+  .footer-brand { text-align: center; justify-content: center; }
+  .footer-grid { text-align: center; }
+  .footer-links { text-align: center; }
+  .footer-newsletter { text-align: center; }
+  .footer-bottom { text-align: center; flex-direction: column; gap: 10px; }
+}
+
 /* ---------- Forms ---------- */
 .form-control {
   width:100%; padding:14px 18px; border-radius: var(--radius-sm);
