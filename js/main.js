@@ -15,7 +15,7 @@ $(function () {
     $html.attr('data-theme', next);
     localStorage.setItem('qa-theme', next);
   }
-  $(document).on('click', '#theme-toggle', toggleTheme);
+  $(document).on('click', '#theme-toggle, #theme-toggle-m, #theme-toggle-sidebar', toggleTheme);
 
   // --- RTL Toggle ---
   const savedDir = localStorage.getItem('qa-dir') || 'ltr';
@@ -27,7 +27,7 @@ $(function () {
     $html.attr('dir', next);
     localStorage.setItem('qa-dir', next);
   }
-  $(document).on('click', '#rtl-toggle', toggleRTL);
+  $(document).on('click', '#rtl-toggle, #rtl-toggle-m, #rtl-toggle-sidebar', toggleRTL);
 
   // --- Mobile Drawer ---
   const $drawer = $('#mobile-drawer');
@@ -119,7 +119,8 @@ $(function () {
     function update(now) {
       const progress = Math.min((now - start) / duration, 1);
       const ease = 1 - Math.pow(1 - progress, 3);
-      $el.text(Math.floor(ease * target).toLocaleString());
+      const suffix = $el.data('suffix') || '';
+      $el.text(Math.floor(ease * target).toLocaleString() + suffix);
       if (progress < 1) requestAnimationFrame(update);
     }
     requestAnimationFrame(update);
@@ -200,6 +201,22 @@ $(function () {
     draw();
   }
   initParticles('particles-canvas');
+
+  // --- Back to Top Button ---
+  const $backToTop = $('<button class="back-to-top" aria-label="Back to Top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg></button>');
+  $('body').append($backToTop);
+
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() > 400) {
+      $backToTop.addClass('show');
+    } else {
+      $backToTop.removeClass('show');
+    }
+  });
+
+  $backToTop.on('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
 
   // --- Current Nav Active State ---
   const currentPage = location.pathname.split('/').pop() || 'index.html';

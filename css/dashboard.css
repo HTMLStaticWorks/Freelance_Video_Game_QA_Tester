@@ -71,6 +71,9 @@
   color: var(--text-muted); width:18px; height:18px;
 }
 .topbar-actions { display:flex; align-items:center; gap:10px; }
+.topbar-actions-group { display:flex; align-items:center; gap:12px; }
+.user-profile-top { display:flex; align-items:center; gap:10px; margin-left:8px; }
+.sidebar-toggle-btn { display:none; }
 
 /* Main Content */
 .dashboard-main {
@@ -172,8 +175,25 @@
   [dir="rtl"] .dashboard-sidebar { transform:translateX(100%); }
   .dashboard-sidebar.open { transform:translateX(0); }
   .dashboard-main { margin-left:0; }
-  .dashboard-topbar { left:0; }
+  .dashboard-topbar { left:0; padding: 0 15px; justify-content: space-between; }
   [dir="rtl"] .dashboard-topbar { right:0; }
   [dir="rtl"] .dashboard-main { margin-right:0; }
-  .sidebar-toggle { display:flex; }
+  .sidebar-toggle { display:none; }
+  .sidebar-toggle-btn { display:flex; order: 1; margin-right: 15px; }
+  .topbar-brand { display:flex !important; order: 2; }
+  .topbar-actions { display:none; }
+  .topbar-search { display:none; }
+  .topbar-actions-group { width: auto; margin-left: auto; order: 3; }
+}
+
+@media(max-width: 768px) {
+  .dashboard-topbar { padding: 0 12px; }
+  .topbar-search { width: 120px; display: none; }
+  .topbar-actions { gap: 8px; }
+  .topbar-actions > div { display: none; } /* Hide user name info on small screens */
+  .dashboard-main { padding: 80px 15px 20px; }
+}
+
+@media(max-width: 1024px) {
+  .dashboard-topbar { left: 0 !important; right: 0 !important; }
 }
