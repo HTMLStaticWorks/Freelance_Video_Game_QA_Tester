@@ -335,34 +335,64 @@
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="section">
-    <div class="section-inner">
+  <section class="section" style="background: linear-gradient(to bottom, transparent, rgba(0,240,255,0.05)); position: relative; overflow: hidden;">
+    <!-- Abstract background decoration -->
+    <div style="position:absolute; top:-10%; right:-5%; width:400px; height:400px; background:radial-gradient(circle, rgba(0,240,255,0.08) 0%, transparent 70%); filter:blur(40px); z-index:0;"></div>
+    
+    <div class="section-inner" style="position:relative; z-index:1;">
       <h2 class="section-title reveal">Developer Testimonials</h2>
-      <p class="section-subtitle reveal">Trusted by indie studios worldwide.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
-        <div class="card reveal" style="position:relative;padding-top:50px;">
-          <div style="position:absolute;top:-24px;left:50%;transform:translateX(-50%);width:56px;height:56px;border-radius:50%;overflow:hidden;border:3px solid var(--accent-cyan);box-shadow:var(--neon-glow-cyan);">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dev" style="width:100%;height:100%;object-fit:cover;">
+      <p class="section-subtitle reveal">Trusted by indie studios worldwide to deliver flawless launches.</p>
+      
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:32px; margin-top:60px;">
+        <!-- Testimonial 1 -->
+        <div class="card reveal" style="background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); border-top: 4px solid var(--accent-cyan); padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position:relative;">
+            <svg style="position:absolute; top:-20px; left:-10px; opacity:0.1; width:50px; height:50px;" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16L19 16C19.552 16 20 15.552 20 15L20 12.017C20 11.465 19.552 11.017 19 11.017L17 11.017C15.899 11.017 15 10.118 15 9.017L15 6.017C15 4.915 15.899 4.017 17 4.017L20 4.017C21.101 4.017 22 4.915 22 6.017L22 15C22 18.314 19.314 21 16 21L14.017 21ZM2.017 21L2.017 18C2.017 16.899 2.899 16 4 16L7 16C7.552 16 8 15.552 8 15L8 12.017C8 11.465 7.552 11.017 7 11.017L5 11.017C3.899 11.017 3 10.118 3 9.017L3 6.017C3 4.915 3.899 4.017 5 4.017L8 4.017C9.101 4.017 10 4.915 10 6.017L10 15C10 18.314 7.314 21 4 21L2.017 21Z" /></svg>
+            <p style="font-size:1.1rem; line-height:1.7; color:var(--text-main); font-style:italic; position:relative; z-index:1; margin-bottom:24px;">
+              "QA Studio found 47 critical bugs before our Steam launch. We went from a 42% refund rate in beta to 4% at launch. Absolutely essential partner."
+            </p>
           </div>
-          <p style="font-style:italic;color:var(--text-muted);margin-bottom:14px;">"QA Studio found 47 critical bugs before our Steam launch. We went from a 42% refund rate in beta to 4% at launch. Absolutely essential partner."</p>
-          <h4 style="font-size:0.95rem;text-align:center;">Marcus Chen</h4>
-          <p style="font-size:0.8rem;text-align:center;color:var(--text-muted);">Solo Dev, Neon Abyss</p>
+          <div style="display:flex; align-items:center; gap:16px; border-top:1px solid rgba(255,255,255,0.05); padding-top:20px;">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Chen" style="width:50px; height:50px; border-radius:12px; object-fit:cover; border:2px solid var(--accent-cyan);">
+            <div>
+              <h4 style="font-size:1rem; margin-bottom:2px; color:var(--text-main);">Marcus Chen</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">Solo Dev, Neon Abyss</p>
+            </div>
+          </div>
         </div>
-        <div class="card reveal" style="position:relative;padding-top:50px;">
-          <div style="position:absolute;top:-24px;left:50%;transform:translateX(-50%);width:56px;height:56px;border-radius:50%;overflow:hidden;border:3px solid var(--accent-purple);box-shadow:var(--neon-glow-purple);">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Dev" style="width:100%;height:100%;object-fit:cover;">
+
+        <!-- Testimonial 2 -->
+        <div class="card reveal" style="background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); border-top: 4px solid var(--accent-purple); padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position:relative;">
+            <svg style="position:absolute; top:-20px; left:-10px; opacity:0.1; width:50px; height:50px;" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16L19 16C19.552 16 20 15.552 20 15L20 12.017C20 11.465 19.552 11.017 19 11.017L17 11.017C15.899 11.017 15 10.118 15 9.017L15 6.017C15 4.915 15.899 4.017 17 4.017L20 4.017C21.101 4.017 22 4.915 22 6.017L22 15C22 18.314 19.314 21 16 21L14.017 21ZM2.017 21L2.017 18C2.017 16.899 2.899 16 4 16L7 16C7.552 16 8 15.552 8 15L8 12.017C8 11.465 7.552 11.017 7 11.017L5 11.017C3.899 11.017 3 10.118 3 9.017L3 6.017C3 4.915 3.899 4.017 5 4.017L8 4.017C9.101 4.017 10 4.915 10 6.017L10 15C10 18.314 7.314 21 4 21L2.017 21Z" /></svg>
+            <p style="font-size:1.1rem; line-height:1.7; color:var(--text-main); font-style:italic; position:relative; z-index:1; margin-bottom:24px;">
+              "The regression testing service saved us after a major patch broke half the game. The dashboard makes tracking issues incredibly easy."
+            </p>
           </div>
-          <p style="font-style:italic;color:var(--text-muted);margin-bottom:14px;">"The regression testing service saved us after a major patch broke half the game. The dashboard makes tracking issues incredibly easy."</p>
-          <h4 style="font-size:0.95rem;text-align:center;">Sarah Okafor</h4>
-          <p style="font-size:0.8rem;text-align:center;color:var(--text-muted);">Lead Producer, PixelForge Games</p>
+          <div style="display:flex; align-items:center; gap:16px; border-top:1px solid rgba(255,255,255,0.05); padding-top:20px;">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sarah Okafor" style="width:50px; height:50px; border-radius:12px; object-fit:cover; border:2px solid var(--accent-purple);">
+            <div>
+              <h4 style="font-size:1rem; margin-bottom:2px; color:var(--text-main);">Sarah Okafor</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">Lead Producer, PixelForge Games</p>
+            </div>
+          </div>
         </div>
-        <div class="card reveal" style="position:relative;padding-top:50px;">
-          <div style="position:absolute;top:-24px;left:50%;transform:translateX(-50%);width:56px;height:56px;border-radius:50%;overflow:hidden;border:3px solid var(--accent-pink);box-shadow:0 0 8px rgba(236,72,153,0.45),0 0 20px rgba(236,72,153,0.25);">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Dev" style="width:100%;height:100%;object-fit:cover;">
+
+        <!-- Testimonial 3 -->
+        <div class="card reveal" style="background: rgba(255,255,255,0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); border-top: 4px solid var(--accent-pink); padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position:relative;">
+            <svg style="position:absolute; top:-20px; left:-10px; opacity:0.1; width:50px; height:50px;" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21L14.017 18C14.017 16.899 14.899 16 16 16L19 16C19.552 16 20 15.552 20 15L20 12.017C20 11.465 19.552 11.017 19 11.017L17 11.017C15.899 11.017 15 10.118 15 9.017L15 6.017C15 4.915 15.899 4.017 17 4.017L20 4.017C21.101 4.017 22 4.915 22 6.017L22 15C22 18.314 19.314 21 16 21L14.017 21ZM2.017 21L2.017 18C2.017 16.899 2.899 16 4 16L7 16C7.552 16 8 15.552 8 15L8 12.017C8 11.465 7.552 11.017 7 11.017L5 11.017C3.899 11.017 3 10.118 3 9.017L3 6.017C3 4.915 3.899 4.017 5 4.017L8 4.017C9.101 4.017 10 4.915 10 6.017L10 15C10 18.314 7.314 21 4 21L2.017 21Z" /></svg>
+            <p style="font-size:1.1rem; line-height:1.7; color:var(--text-main); font-style:italic; position:relative; z-index:1; margin-bottom:24px;">
+              "Console certification was a nightmare until QA Studio handled our compliance testing. Passed Sony and Nintendo checks on the first submission."
+            </p>
           </div>
-          <p style="font-style:italic;color:var(--text-muted);margin-bottom:14px;">"Console certification was a nightmare until QA Studio handled our compliance testing. Passed Sony and Nintendo checks on the first submission."</p>
-          <h4 style="font-size:0.95rem;text-align:center;">Yuki Tanaka</h4>
-          <p style="font-size:0.8rem;text-align:center;color:var(--text-muted);">Director, Sakura Interactive</p>
+          <div style="display:flex; align-items:center; gap:16px; border-top:1px solid rgba(255,255,255,0.05); padding-top:20px;">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Yuki Tanaka" style="width:50px; height:50px; border-radius:12px; object-fit:cover; border:2px solid var(--accent-pink);">
+            <div>
+              <h4 style="font-size:1rem; margin-bottom:2px; color:var(--text-main);">Yuki Tanaka</h4>
+              <p style="font-size:0.8rem; color:var(--text-muted);">Director, Sakura Interactive</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
