@@ -236,7 +236,7 @@ ul,ol { list-style:none; }
 @media(max-width:992px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
 @media(max-width:576px){ .footer-grid{ grid-template-columns:1fr; } }
 
-.footer-brand { display: flex; align-items: center; font-family: var(--font-heading); font-size:1.4rem; color:#fff; margin-bottom:14px; }
+.footer-brand { display: flex; align-items: center; font-family: var(--font-heading); font-size:1.4rem; color:#fff; margin-bottom:14px; text-decoration: none; }
 .footer-brand span { color: var(--accent-cyan); }
 .footer-desc { line-height:1.7; margin-bottom:20px; }
 .footer-socials { display:flex; gap:12px; }
@@ -717,6 +717,7 @@ ul,ol { list-style:none; }
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 28px;
   font-family: var(--font-heading); font-size: 1.5rem; color: var(--text-main);
+  text-decoration: none;
 }
 .auth-logo span { color: var(--accent-cyan); }
 .password-wrap { position:relative; }
