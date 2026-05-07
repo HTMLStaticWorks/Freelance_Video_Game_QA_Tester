@@ -347,6 +347,101 @@ ul,ol { list-style:none; }
 .card h3 { font-size:1.15rem; margin-bottom:10px; color: var(--text-main); }
 .card p { color: var(--text-muted); font-size:0.92rem; line-height:1.6; }
 
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+  border: 1px solid rgba(0,240,255,0.1);
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Genre Cards ---------- */
+.genre-card {
+  background: rgba(20,22,35,0.6);
+  border: 1px solid rgba(0,240,255,0.1);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.genre-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,240,255,0.3);
+  box-shadow: 0 10px 30px rgba(0,240,255,0.2);
+}
+
+.genre-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.genre-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.genre-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ---------- Platform Cards ---------- */
+.platform-card {
+  background: rgba(20,22,35,0.6);
+  border: 1px solid rgba(139,92,246,0.1);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139,92,246,0.3);
+  box-shadow: 0 10px 30px rgba(139,92,246,0.2);
+}
+
+.platform-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.platform-card h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.platform-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
 /* ---------- Glass Cards (Home 2) ---------- */
 .glass-card {
   background: rgba(15,17,26,0.55);
