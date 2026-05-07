@@ -218,46 +218,1353 @@
       </div>
     </div>
 
-    <!-- Notifications -->
-    <div class="dash-row dash-row-2">
-      <div class="dash-panel">
-        <h4>Notification Center</h4>
-        <div style="display:flex;flex-direction:column;gap:14px;">
-          <div style="display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
-            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent-pink);margin-top:6px;flex-shrink:0;box-shadow:0 0 6px rgba(236,72,153,0.6);"></div>
-            <div><div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">Critical bug requires your attention</div><div style="font-size:0.78rem;color:var(--text-muted);">Neon Abyss — save corruption on Switch sleep mode</div></div>
+    <!-- Active Testing Sections -->
+    <div class="dash-section" id="active-testing" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Active Testing</h3>
+      
+      <!-- Section 1: Current Test Sessions -->
+      <div class="dash-row dash-row-3">
+        <div class="dash-panel">
+          <h4>Current Test Sessions</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;border-left:4px solid var(--accent-cyan);">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Neon Abyss v0.9.4</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Platform: PC, Switch | Tester: John D.</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Started: 2 hours ago | Progress: 68%</div>
+                </div>
+                <span class="status-badge status-testing">In Progress</span>
+              </div>
+              <div style="margin-top:8px;">
+                <div style="height:6px;border-radius:3px;background:var(--bg-body);overflow:hidden;">
+                  <div style="width:68%;height:100%;background:var(--accent-cyan);border-radius:3px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;border-left:4px solid var(--accent-purple);">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Iron Harvest v1.1.0</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Platform: PS5, PC | Tester: Sarah K.</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Started: 4 hours ago | Progress: 45%</div>
+                </div>
+                <span class="status-badge status-testing">In Progress</span>
+              </div>
+              <div style="margin-top:8px;">
+                <div style="height:6px;border-radius:3px;background:var(--bg-body);overflow:hidden;">
+                  <div style="width:45%;height:100%;background:var(--accent-purple);border-radius:3px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;border-left:4px solid var(--accent-pink);">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Starlight Drift v2.0.1</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Platform: iOS, Android | Tester: Mike R.</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Started: 6 hours ago | Progress: 92%</div>
+                </div>
+                <span class="status-badge status-completed">Final Review</span>
+              </div>
+              <div style="margin-top:8px;">
+                <div style="height:6px;border-radius:3px;background:var(--bg-body);overflow:hidden;">
+                  <div style="width:92%;height:100%;background:var(--accent-pink);border-radius:3px;"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div style="display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
-            <div style="width:8px;height:8px;border-radius:50%;background:var(--accent-cyan);margin-top:6px;flex-shrink:0;box-shadow:0 0 6px rgba(0,240,255,0.6);"></div>
-            <div><div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">Testing milestone reached</div><div style="font-size:0.78rem;color:var(--text-muted);">Starlight Drift — 100% functional coverage complete</div></div>
+        </div>
+        
+        <!-- Section 2: Test Coverage Analysis -->
+        <div class="dash-panel">
+          <h4>Test Coverage Analysis</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Functional Testing</span>
+                <span style="color:var(--accent-cyan);">87%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:87%;height:100%;background:var(--accent-cyan);border-radius:4px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Gameplay Testing</span>
+                <span style="color:var(--accent-purple);">72%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:72%;height:100%;background:var(--accent-purple);border-radius:4px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Compatibility Testing</span>
+                <span style="color:var(--accent-pink);">94%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:94%;height:100%;background:var(--accent-pink);border-radius:4px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Performance Testing</span>
+                <span style="color:#22c55e;">68%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:68%;height:100%;background:#22c55e;border-radius:4px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Network Testing</span>
+                <span style="color:#fb923c;">45%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:45%;height:100%;background:#fb923c;border-radius:4px;"></div>
+              </div>
+            </div>
           </div>
-          <div style="display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
-            <div style="width:8px;height:8px;border-radius:50%;background:#fbbf24;margin-top:6px;flex-shrink:0;box-shadow:0 0 6px rgba(251,191,36,0.6);"></div>
-            <div><div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">Invoice reminder</div><div style="font-size:0.78rem;color:var(--text-muted);">Invoice #2026-091 due in 3 days</div></div>
+        </div>
+        
+        <!-- Section 3: Real-time Activity Feed -->
+        <div class="dash-panel">
+          <h4>Real-time Activity Feed</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;max-height:300px;overflow-y:auto;">
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:var(--accent-cyan);margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(0,240,255,0.6);"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">New bug found</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Neon Abyss - UI overlay issue in main menu</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">2 minutes ago</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:var(--accent-purple);margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(139,92,246,0.6);"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">Test case completed</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Iron Harvest - Multiplayer stress test passed</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">15 minutes ago</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:var(--accent-pink);margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(236,72,153,0.6);"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">Critical issue logged</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Starlight Drift - Memory leak on level 5</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">32 minutes ago</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#22c55e;margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(34,197,94,0.6);"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">Build validated</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Pixel Knights - Build ready for testing</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">1 hour ago</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="dash-panel">
-        <h4>Performance Statistics</h4>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
-          <div class="card" style="padding:18px;text-align:center;">
-            <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Avg FPS</div>
-            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:var(--accent-cyan);">62.4</div>
+    </div>
+
+    <!-- Bug Reports Sections -->
+    <div class="dash-section" id="bug-reports" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Bug Reports</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Recent Bug Reports -->
+        <div class="dash-panel">
+          <h4>Recent Bug Reports</h4>
+          <div style="overflow-x:auto;">
+            <table class="data-table">
+              <thead><tr><th>ID</th><th>Title</th><th>Severity</th><th>Status</th><th>Reported</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td><span style="font-family:var(--font-heading);color:var(--accent-cyan);">BUG-2026-0847</span></td>
+                  <td>Player falls through floor in Level 3</td>
+                  <td><span class="severity-badge severity-critical">Critical</span></td>
+                  <td><span class="status-badge status-testing">In Progress</span></td>
+                  <td>2 hours ago</td>
+                </tr>
+                <tr>
+                  <td><span style="font-family:var(--font-heading);color:var(--accent-purple);">BUG-2026-0846</span></td>
+                  <td>UI overlay covers main menu buttons</td>
+                  <td><span class="severity-badge severity-high">High</span></td>
+                  <td><span class="status-badge status-pending">Pending</span></td>
+                  <td>3 hours ago</td>
+                </tr>
+                <tr>
+                  <td><span style="font-family:var(--font-heading);color:var(--accent-pink);">BUG-2026-0845</span></td>
+                  <td>Audio crackling during cutscenes</td>
+                  <td><span class="severity-badge severity-medium">Medium</span></td>
+                  <td><span class="status-badge status-completed">Fixed</span></td>
+                  <td>5 hours ago</td>
+                </tr>
+                <tr>
+                  <td><span style="font-family:var(--font-heading);color:#22c55e;">BUG-2026-0844</span></td>
+                  <td>Text overflow in settings menu</td>
+                  <td><span class="severity-badge severity-low">Low</span></td>
+                  <td><span class="status-badge status-completed">Fixed</span></td>
+                  <td>1 day ago</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="card" style="padding:18px;text-align:center;">
-            <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Load Time</div>
-            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:var(--accent-purple);">4.2s</div>
+        </div>
+        
+        <!-- Section 2: Bug Severity Breakdown -->
+        <div class="dash-panel">
+          <h4>Severity Breakdown</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px;">
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;font-weight:700;color:#f43f5e;margin-bottom:4px;">3</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);">Critical</div>
+            </div>
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;font-weight:700;color:#fb923c;margin-bottom:4px;">11</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);">High</div>
+            </div>
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;font-weight:700;color:#fbbf24;margin-bottom:4px;">28</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);">Medium</div>
+            </div>
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:1.8rem;font-weight:700;color:#22c55e;margin-bottom:4px;">47</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);">Low</div>
+            </div>
           </div>
-          <div class="card" style="padding:18px;text-align:center;">
-            <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Crash Rate</div>
-            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:#22c55e;">0.4%</div>
+          <div style="background:var(--bg-body);border-radius:var(--radius-sm);padding:16px;border:1px solid var(--border-color);">
+            <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;margin-bottom:12px;">Trend Analysis</div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;justify-content:space-between;font-size:0.78rem;">
+                <span style="color:var(--text-muted);">Critical bugs this week</span>
+                <span style="color:#f43f5e;font-weight:600;">-2</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;font-size:0.78rem;">
+                <span style="color:var(--text-muted);">High bugs this week</span>
+                <span style="color:#fb923c;font-weight:600;">+5</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;font-size:0.78rem;">
+                <span style="color:var(--text-muted);">Fix rate</span>
+                <span style="color:#22c55e;font-weight:600;">78%</span>
+              </div>
+            </div>
           </div>
-          <div class="card" style="padding:18px;text-align:center;">
-            <div style="font-size:0.78rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Netcode Latency</div>
-            <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:#fb923c;">28ms</div>
+        </div>
+        
+        <!-- Section 3: Bug Resolution Timeline -->
+        <div class="dash-panel">
+          <h4>Resolution Timeline</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div style="font-weight:600;color:var(--text-main);">Average Resolution Time</div>
+                <div style="font-family:var(--font-heading);font-size:1.2rem;color:var(--accent-cyan);">2.4 days</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:0.78rem;">
+                <div>
+                  <div style="color:var(--text-muted);margin-bottom:2px;">Critical</div>
+                  <div style="color:#f43f5e;font-weight:600;">4.2 hours</div>
+                </div>
+                <div>
+                  <div style="color:var(--text-muted);margin-bottom:2px;">High</div>
+                  <div style="color:#fb923c;font-weight:600;">1.8 days</div>
+                </div>
+                <div>
+                  <div style="color:var(--text-muted);margin-bottom:2px;">Medium</div>
+                  <div style="color:#fbbf24;font-weight:600;">3.1 days</div>
+                </div>
+                <div>
+                  <div style="color:var(--text-muted);margin-bottom:2px;">Low</div>
+                  <div style="color:#22c55e;font-weight:600;">5.7 days</div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">Recent Resolutions</div>
+              <div style="display:flex;flex-direction:column;gap:8px;">
+                <div style="display:flex;justify-content:space-between;font-size:0.78rem;">
+                  <span style="color:var(--text-muted);">BUG-2026-0843</span>
+                  <span style="color:#22c55e;">Fixed in 2.1h</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.78rem;">
+                  <span style="color:var(--text-muted);">BUG-2026-0842</span>
+                  <span style="color:#22c55e;">Fixed in 5.3h</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;font-size:0.78rem;">
+                  <span style="color:var(--text-muted);">BUG-2026-0841</span>
+                  <span style="color:#22c55e;">Fixed in 1.2h</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Severity Tracker Sections -->
+    <div class="dash-section" id="severity-tracker" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Severity Tracker</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Critical Issues Dashboard -->
+        <div class="dash-panel">
+          <h4>Critical Issues Dashboard</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;border-left:4px solid #f43f5e;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Save Corruption - Switch Sleep Mode</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Neon Abyss v0.9.4 | Platform: Nintendo Switch</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Impact: Game progress loss | Reproducibility: 80%</div>
+                </div>
+                <span class="severity-badge severity-critical">Critical</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;">
+                <button class="btn btn-primary" style="font-size:0.75rem;padding:6px 12px;">Assign</button>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">Details</button>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;border-left:4px solid #f43f5e;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Memory Leak - Level 5</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Starlight Drift v2.0.1 | Platform: iOS, Android</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Impact: Crash after 10 min | Reproducibility: 100%</div>
+                </div>
+                <span class="severity-badge severity-critical">Critical</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;">
+                <button class="btn btn-primary" style="font-size:0.75rem;padding:6px 12px;">Assign</button>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">Details</button>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;border-left:4px solid #f43f5e;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Network Desync - Multiplayer</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Iron Harvest v1.1.0 | Platform: PS5, Xbox</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Impact: Game breaking | Reproducibility: 60%</div>
+                </div>
+                <span class="severity-badge severity-critical">Critical</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;">
+                <button class="btn btn-primary" style="font-size:0.75rem;padding:6px 12px;">Assign</button>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Severity Trends -->
+        <div class="dash-panel">
+          <h4>Severity Trends</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+            <div class="card" style="padding:12px;text-align:center;">
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px;">Critical Trend</div>
+              <div style="font-size:1.4rem;font-weight:700;color:#f43f5e;">3 ↓</div>
+              <div style="font-size:0.7rem;color:#22c55e;">-2 from last week</div>
+            </div>
+            <div class="card" style="padding:12px;text-align:center;">
+              <div style="font-size:0.75rem;color:var(--text-muted);margin-bottom:4px;">High Trend</div>
+              <div style="font-size:1.4rem;font-weight:700;color:#fb923c;">11 ↑</div>
+              <div style="font-size:0.7rem;color:#f43f5e;">+5 from last week</div>
+            </div>
+          </div>
+          <div style="background:var(--bg-body);border-radius:var(--radius-sm);padding:16px;border:1px solid var(--border-color);">
+            <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;margin-bottom:12px;">30-Day Severity Distribution</div>
+            <div style="display:flex;align-items:end;gap:4px;height:120px;">
+              <div style="flex:1;background:#22c55e;border-radius:2px;" style="height:30%;"></div>
+              <div style="flex:1;background:#fbbf24;border-radius:2px;" style="height:45%;"></div>
+              <div style="flex:1;background:#fb923c;border-radius:2px;" style="height:60%;"></div>
+              <div style="flex:1;background:#ec4899;border-radius:2px;" style="height:25%;"></div>
+              <div style="flex:1;background:#f43f5e;border-radius:2px;" style="height:15%;"></div>
+              <div style="flex:1;background:#60a5fa;border-radius:2px;" style="height:35%;"></div>
+              <div style="flex:1;background:#a78bfa;border-radius:2px;" style="height:20%;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:0.7rem;color:var(--text-muted);">
+              <span>Low</span>
+              <span>Med</span>
+              <span>High</span>
+              <span>Crit</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3: Escalation Matrix -->
+        <div class="dash-panel">
+          <h4>Escalation Matrix</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">Auto-Escalation Rules</div>
+              <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:var(--text-muted);">Critical → Lead Dev</span>
+                  <span style="color:#f43f5e;font-weight:600;">1 hour</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:var(--text-muted);">High → Senior QA</span>
+                  <span style="color:#fb923c;font-weight:600;">4 hours</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;">
+                  <span style="color:var(--text-muted);">Medium → QA Lead</span>
+                  <span style="color:#fbbf24;font-weight:600;">24 hours</span>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">Pending Escalations</div>
+              <div style="display:flex;flex-direction:column;gap:6px;">
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;">
+                  <span style="color:var(--text-muted);">BUG-2026-0847</span>
+                  <span style="color:#f43f5e;font-weight:600;">Escalate in 45m</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;">
+                  <span style="color:var(--text-muted);">BUG-2026-0846</span>
+                  <span style="color:#fb923c;font-weight:600;">Escalate in 2.5h</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QA Metrics Sections -->
+    <div class="dash-section" id="qa-metrics" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">QA Metrics</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Performance Metrics -->
+        <div class="dash-panel">
+          <h4>Performance Metrics</h4>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Avg FPS</div>
+              <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:700;color:var(--accent-cyan);">62.4</div>
+              <div style="font-size:0.7rem;color:#22c55e;">+2.1 from baseline</div>
+            </div>
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Load Time</div>
+              <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:700;color:var(--accent-purple);">4.2s</div>
+              <div style="font-size:0.7rem;color:#22c55e;">-0.8s improvement</div>
+            </div>
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Crash Rate</div>
+              <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:700;color:#22c55e;">0.4%</div>
+              <div style="font-size:0.7rem;color:#22c55e;">Below threshold</div>
+            </div>
+            <div class="card" style="padding:16px;text-align:center;">
+              <div style="font-size:0.75rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Memory Usage</div>
+              <div style="font-family:var(--font-heading);font-size:1.8rem;font-weight:700;color:#fb923c;">2.8GB</div>
+              <div style="font-size:0.7rem;color:#fbbf24;">Within limits</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Testing Efficiency -->
+        <div class="dash-panel">
+          <h4>Testing Efficiency</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Test Coverage</span>
+                <span style="color:var(--accent-cyan);">78%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:78%;height:100%;background:var(--accent-cyan);border-radius:4px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Automation Rate</span>
+                <span style="color:var(--accent-purple);">45%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:45%;height:100%;background:var(--accent-purple);border-radius:4px;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;font-size:0.82rem;margin-bottom:6px;">
+                <span style="color:var(--text-main);font-weight:600;">Bug Detection Rate</span>
+                <span style="color:var(--accent-pink);">92%</span>
+              </div>
+              <div style="height:8px;border-radius:4px;background:var(--bg-body);overflow:hidden;">
+                <div style="width:92%;height:100%;background:var(--accent-pink);border-radius:4px;"></div>
+              </div>
+            </div>
+            <div class="card" style="padding:12px;">
+              <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;margin-bottom:8px;">Weekly Efficiency Score</div>
+              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:700;color:var(--accent-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">87.3</div>
+              <div style="font-size:0.7rem;color:#22c55e;">+5.2 from last week</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3: Quality Indicators -->
+        <div class="dash-panel">
+          <h4>Quality Indicators</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">Customer Satisfaction</div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:#22c55e;">4.8/5.0</div>
+                <div style="display:flex;gap:2px;">
+                  <span style="color:#fbbf24;">★</span><span style="color:#fbbf24;">★</span><span style="color:#fbbf24;">★</span><span style="color:#fbbf24;">★</span><span style="color:#fbbf24;">★</span>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">Regression Rate</div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:#22c55e;">3.2%</div>
+                <div style="font-size:0.78rem;color:var(--text-muted);">Below 5% target</div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">First Pass Yield</div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <div style="font-family:var(--font-heading);font-size:1.6rem;font-weight:700;color:var(--accent-cyan);">94.7%</div>
+                <div style="font-size:0.78rem;color:var(--text-muted);">Above 90% target</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Communication Sections -->
+    <div class="dash-section" id="team-communication" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Team Communication</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Active Discussions -->
+        <div class="dash-panel">
+          <h4>Active Discussions</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Neon Abyss Critical Bug Discussion</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Started by: John D. | 12 messages</div>
+                </div>
+                <span style="background:var(--accent-pink);color:#fff;font-size:0.65rem;padding:2px 8px;border-radius:10px;">Hot</span>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.4;">
+                Latest: "Memory leak confirmed in level 5. Working on patch..."
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Iron Harvest Multiplayer Testing</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Started by: Sarah K. | 8 messages</div>
+                </div>
+                <span style="background:var(--accent-cyan);color:#fff;font-size:0.65rem;padding:2px 8px;border-radius:10px;">Active</span>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.4;">
+                Latest: "Network stress test completed. Results attached."
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Test Plan Review - Starlight Drift</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Started by: Mike R. | 5 messages</div>
+                </div>
+                <span style="background:var(--accent-purple);color:#fff;font-size:0.65rem;padding:2px 8px;border-radius:10px;">Review</span>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.4;">
+                Latest: "Updated test cases for mobile compatibility."
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Team Status -->
+        <div class="dash-panel">
+          <h4>Team Status</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="John" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                <div style="flex:1;">
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">John D.</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Testing Neon Abyss</div>
+                </div>
+                <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;"></span>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Available for questions</div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Sarah" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                <div style="flex:1;">
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Sarah K.</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Testing Iron Harvest</div>
+                </div>
+                <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;"></span>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">In a meeting</div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Mike" style="width:40px;height:40px;border-radius:50%;object-fit:cover;">
+                <div style="flex:1;">
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Mike R.</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Testing Starlight Drift</div>
+                </div>
+                <span style="width:8px;height:8px;border-radius:50%;background:#fbbf24;"></span>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Away - Back in 30m</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3: Quick Actions -->
+        <div class="dash-panel">
+          <h4>Quick Actions</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <button class="btn btn-primary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Start Team Chat
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Share Test Report
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><rect x="3" y="11" width="18" height="10" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Schedule Meeting
+            </button>
+            <div class="card" style="padding:12px;">
+              <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;margin-bottom:6px;">Team Stats</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.75rem;">
+                <div><span style="color:var(--text-muted);">Online:</span> <span style="color:#22c55e;font-weight:600;">2/3</span></div>
+                <div><span style="color:var(--text-muted);">Active Chats:</span> <span style="color:var(--accent-cyan);font-weight:600;">5</span></div>
+                <div><span style="color:var(--text-muted);">Messages Today:</span> <span style="color:var(--accent-purple);font-weight:600;">47</span></div>
+                <div><span style="color:var(--text-muted);">Response Time:</span> <span style="color:#22c55e;font-weight:600;">2m</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reports Export Sections -->
+    <div class="dash-section" id="reports-export" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Reports Export</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Recent Reports -->
+        <div class="dash-panel">
+          <h4>Recent Reports</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Neon Abyss - Full QA Report</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Generated: May 6, 2026 | Size: 2.4MB</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Format: PDF | Pages: 47</div>
+                </div>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">Download</button>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Iron Harvest - Bug Summary</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Generated: May 5, 2026 | Size: 856KB</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Format: Excel | Sheets: 3</div>
+                </div>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">Download</button>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Starlight Drift - Performance Analysis</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Generated: May 4, 2026 | Size: 1.2MB</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Format: PDF | Pages: 23</div>
+                </div>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">Download</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Export Templates -->
+        <div class="dash-panel">
+          <h4>Export Templates</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <button class="btn btn-primary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Full QA Report (PDF)
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+              Bug Summary (Excel)
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              Performance Metrics (PowerPoint)
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Test Coverage (CSV)
+            </button>
+          </div>
+        </div>
+        
+        <!-- Section 3: Scheduled Exports -->
+        <div class="dash-panel">
+          <h4>Scheduled Exports</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Weekly Summary</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Every Monday, 9:00 AM</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Next: May 12, 2026</div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Monthly Report</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">1st of each month, 10:00 AM</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+              <div style="font-size:0.75rem;color:var(--text-muted);">Next: June 1, 2026</div>
+            </div>
+            <button class="btn btn-secondary" style="width:100%;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+              Add Schedule
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Sections -->
+    <div class="dash-section" id="account" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Account</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Profile Information -->
+        <div class="dash-panel">
+          <h4>Profile Information</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="display:flex;align-items:center;gap:16px;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Profile" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--accent-cyan);">
+              <div>
+                <div style="font-size:1.2rem;font-weight:700;color:var(--text-main);">Marcus Chen</div>
+                <div style="font-size:0.9rem;color:var(--text-muted);">Indie Developer</div>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;margin-top:8px;">Change Photo</button>
+              </div>
+            </div>
+            <div class="card" style="padding:16px;">
+              <div style="display:flex;flex-direction:column;gap:12px;">
+                <div>
+                  <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Full Name</label>
+                  <input type="text" value="Marcus Chen" style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                </div>
+                <div>
+                  <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Studio Name</label>
+                  <input type="text" value="Neon Abyss Studio" style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                </div>
+                <div>
+                  <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Email</label>
+                  <input type="email" value="marcus@neonabyss.com" style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                </div>
+                <button class="btn btn-primary" style="width:100%;">Save Changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Subscription Plan -->
+        <div class="dash-panel">
+          <h4>Subscription Plan</h4>
+          <div class="card" style="padding:16px;border:2px solid var(--accent-cyan);">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:12px;">
+              <div>
+                <div style="font-size:1.1rem;font-weight:700;color:var(--text-main);">Indie Studio Pack</div>
+                <div style="font-size:0.9rem;color:var(--accent-cyan);">$799/month</div>
+              </div>
+              <span class="status-badge status-completed">Active</span>
+            </div>
+            <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:16px;">
+              16 testing hours/month • 3 platforms • Up to 80 bug reports • Priority support
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;font-size:0.85rem;">
+              <div style="display:flex;justify-content:space-between;">
+                <span style="color:var(--text-muted);">Hours Used</span>
+                <span style="color:var(--accent-cyan);font-weight:600;">12/16</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;">
+                <span style="color:var(--text-muted);">Reports Generated</span>
+                <span style="color:var(--accent-purple);font-weight:600;">67/80</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;">
+                <span style="color:var(--text-muted);">Next Billing</span>
+                <span style="color:var(--text-main);font-weight:600;">June 1, 2026</span>
+              </div>
+            </div>
+            <div style="margin-top:16px;">
+              <button class="btn btn-secondary" style="width:100%;">Upgrade Plan</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3: Security Settings -->
+        <div class="dash-panel">
+          <h4>Security Settings</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><rect x="3" y="11" width="18" height="10" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Change Password
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Enable 2FA
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Privacy Settings
+            </button>
+            <div class="card" style="padding:12px;">
+              <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;margin-bottom:8px;">Active Sessions</div>
+              <div style="display:flex;flex-direction:column;gap:6px;font-size:0.78rem;">
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <span style="color:var(--text-muted);">Chrome on Windows</span>
+                  <span style="color:#22c55e;">Current</span>
+                </div>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                  <span style="color:var(--text-muted);">Safari on iPhone</span>
+                  <button class="btn btn-secondary" style="font-size:0.7rem;padding:2px 8px;">Revoke</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Payment & Billing Sections -->
+    <div class="dash-section" id="payment-billing" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Payment & Billing</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Current Invoices -->
+        <div class="dash-panel">
+          <h4>Current Invoices</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Invoice #2026-091</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Full Launch QA — Iron Harvest</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Due: May 10, 2026 | Amount: $1,999</div>
+                </div>
+                <span class="status-badge status-testing">Pending</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;">
+                <button class="btn btn-primary" style="font-size:0.75rem;padding:6px 12px;">Pay Now</button>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">View Details</button>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Invoice #2026-090</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Indie Studio Pack — May 2026</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Due: June 1, 2026 | Amount: $799</div>
+                </div>
+                <span class="status-badge status-pending">Upcoming</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;">
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">View Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Payment Methods -->
+        <div class="dash-panel">
+          <h4>Payment Methods</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;border:2px solid var(--accent-cyan);">
+              <div style="display:flex;justify-content:space-between;align-items-center;">
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <div style="width:40px;height:24px;background:linear-gradient(135deg,#1e40af,#3b82f6);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.7rem;font-weight:600;">VISA</div>
+                  <div>
+                    <div style="font-weight:600;color:var(--text-main);">•••• 4242</div>
+                    <div style="font-size:0.78rem;color:var(--text-muted);">Expires 12/24</div>
+                  </div>
+                </div>
+                <span style="background:var(--accent-cyan);color:#fff;font-size:0.65rem;padding:2px 8px;border-radius:10px;">Default</span>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items-center;">
+                <div style="display:flex;align-items:center;gap:12px;">
+                  <div style="width:40px;height:24px;background:linear-gradient(135deg,#dc2626,#ef4444);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:0.7rem;font-weight:600;">MC</div>
+                  <div>
+                    <div style="font-weight:600;color:var(--text-main);">•••• 5555</div>
+                    <div style="font-size:0.78rem;color:var(--text-muted);">Expires 09/25</div>
+                  </div>
+                </div>
+                <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 8px;">Set Default</button>
+              </div>
+            </div>
+            <button class="btn btn-secondary" style="width:100%;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+              Add Payment Method
+            </button>
+          </div>
+        </div>
+        
+        <!-- Section 3: Billing History -->
+        <div class="dash-panel">
+          <h4>Billing History</h4>
+          <div style="display:flex;flex-direction:column;gap:8px;max-height:300px;overflow-y:auto;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-bottom:1px solid var(--border-color);">
+              <div>
+                <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">Invoice #2026-089</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Apr 1, 2026</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">$799</div>
+                <span class="status-badge status-completed" style="font-size:0.65rem;">Paid</span>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-bottom:1px solid var(--border-color);">
+              <div>
+                <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">Invoice #2026-088</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Mar 15, 2026</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">$1,999</div>
+                <span class="status-badge status-completed" style="font-size:0.65rem;">Paid</span>
+              </div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px;border-bottom:1px solid var(--border-color);">
+              <div>
+                <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">Invoice #2026-087</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Mar 1, 2026</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:0.85rem;color:var(--text-main);font-weight:600;">$799</div>
+                <span class="status-badge status-completed" style="font-size:0.65rem;">Paid</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notifications Sections -->
+    <div class="dash-section" id="notifications" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Notifications <span style="background:var(--accent-pink);color:#fff;font-size:0.65rem;padding:2px 8px;border-radius:10px;margin-left:8px;">3</span></h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Unread Notifications -->
+        <div class="dash-panel">
+          <h4>Unread Notifications</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;border-left:4px solid var(--accent-pink);">
+              <div style="display:flex;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--accent-pink);margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(236,72,153,0.6);"></div>
+                <div style="flex:1;">
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Critical bug requires your attention</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:6px;">Neon Abyss — save corruption on Switch sleep mode</div>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">2 hours ago</div>
+                  <div style="margin-top:8px;display:flex;gap:8px;">
+                    <button class="btn btn-primary" style="font-size:0.7rem;padding:4px 12px;">View Bug</button>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 12px;">Dismiss</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;border-left:4px solid var(--accent-cyan);">
+              <div style="display:flex;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--accent-cyan);margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(0,240,255,0.6);"></div>
+                <div style="flex:1;">
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Testing milestone reached</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:6px;">Starlight Drift — 100% functional coverage complete</div>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">5 hours ago</div>
+                  <div style="margin-top:8px;display:flex;gap:8px;">
+                    <button class="btn btn-primary" style="font-size:0.7rem;padding:4px 12px;">View Report</button>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 12px;">Dismiss</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;border-left:4px solid #fbbf24;">
+              <div style="display:flex;gap:12px;">
+                <div style="width:8px;height:8px;border-radius:50%;background:#fbbf24;margin-top:8px;flex-shrink:0;box-shadow:0 0 6px rgba(251,191,36,0.6);"></div>
+                <div style="flex:1;">
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Invoice reminder</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:6px;">Invoice #2026-091 due in 3 days</div>
+                  <div style="font-size:0.75rem;color:var(--text-muted);">1 day ago</div>
+                  <div style="margin-top:8px;display:flex;gap:8px;">
+                    <button class="btn btn-primary" style="font-size:0.7rem;padding:4px 12px;">Pay Now</button>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 12px;">Dismiss</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Notification Settings -->
+        <div class="dash-panel">
+          <h4>Notification Settings</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Email Notifications</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Receive updates via email</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Critical Alerts</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Instant notifications for critical bugs</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items-center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Daily Summary</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Daily recap of testing progress</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Billing Updates</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Payment and invoice notifications</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3: Recent Activity -->
+        <div class="dash-panel">
+          <h4>Recent Activity</h4>
+          <div style="display:flex;flex-direction:column;gap:10px;max-height:300px;overflow-y:auto;">
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:var(--accent-purple);margin-top:8px;flex-shrink:0;"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">Iron Harvest build accepted</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">v1.1.0 PS5 build passed intake checks</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">5 hours ago</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#22c55e;margin-top:8px;flex-shrink:0;"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">Starlight Drift testing completed</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Final report exported and delivered</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">1 day ago</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:10px;padding:10px;border-radius:var(--radius-sm);background:var(--bg-body);border:1px solid var(--border-color);">
+              <div style="width:6px;height:6px;border-radius:50%;background:#fbbf24;margin-top:8px;flex-shrink:0;"></div>
+              <div>
+                <div style="font-size:0.82rem;color:var(--text-main);font-weight:600;">Payment processed</div>
+                <div style="font-size:0.75rem;color:var(--text-muted);">Indie Studio Pack invoice #2026-089 paid</div>
+                <div style="font-size:0.7rem;color:var(--text-muted);margin-top:2px;">2 days ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Sections -->
+    <div class="dash-section" id="settings" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Settings</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: General Settings -->
+        <div class="dash-panel">
+          <h4>General Settings</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Language</label>
+              <select style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                <option>English</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>German</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Timezone</label>
+              <select style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                <option>UTC-05:00 (Eastern Time)</option>
+                <option>UTC-08:00 (Pacific Time)</option>
+                <option>UTC+00:00 (GMT)</option>
+                <option>UTC+01:00 (Central European Time)</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Date Format</label>
+              <select style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                <option>MM/DD/YYYY</option>
+                <option>DD/MM/YYYY</option>
+                <option>YYYY-MM-DD</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" style="width:100%;">Save Settings</button>
+          </div>
+        </div>
+        
+        <!-- Section 2: Display Preferences -->
+        <div class="dash-panel">
+          <h4>Display Preferences</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Theme</label>
+              <select style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                <option>Dark (Default)</option>
+                <option>Light</option>
+                <option>Auto</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Dashboard Layout</label>
+              <select style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+                <option>Compact</option>
+                <option>Standard (Default)</option>
+                <option>Spacious</option>
+              </select>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items-center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Show Tooltips</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Display helpful hints on hover</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);font-size:0.9rem;">Animations</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Enable UI animations</div>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 3: Advanced Settings -->
+        <div class="dash-panel">
+          <h4>Advanced Settings</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              Export Data
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Import Settings
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Clear Cache
+            </button>
+            <button class="btn btn-secondary" style="width:100%;justify-content:flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:8px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Reset Settings
+            </button>
+            <div class="card" style="padding:12px;background:rgba(236,72,153,0.1);border:1px solid rgba(236,72,153,0.3);">
+              <div style="font-size:0.85rem;color:var(--accent-pink);font-weight:600;margin-bottom:4px;">⚠️ Danger Zone</div>
+              <button class="btn btn-secondary" style="width:100%;background:var(--accent-pink);color:#fff;border:none;">Delete Account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submitted Builds Sections -->
+    <div class="dash-section" id="submitted-builds" style="display:none;">
+      <h3 style="font-size:1.3rem;margin-bottom:20px;color:var(--text-main);">Submitted Builds</h3>
+      
+      <div class="dash-row dash-row-3">
+        <!-- Section 1: Build Queue -->
+        <div class="dash-panel">
+          <h4>Build Queue</h4>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Pixel Knights v0.8.2</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Platform: Xbox, PC | Size: 2.4GB</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Submitted: Apr 25, 2026 | Status: Pending</div>
+                </div>
+                <span class="status-badge status-pending">Pending</span>
+              </div>
+              <div style="margin-top:8px;display:flex;gap:8px;">
+                <button class="btn btn-primary" style="font-size:0.75rem;padding:6px 12px;">Start Testing</button>
+                <button class="btn btn-secondary" style="font-size:0.75rem;padding:6px 12px;">View Details</button>
+              </div>
+            </div>
+            <div class="card" style="padding:14px;">
+              <div style="display:flex;justify-content:space-between;align-items:start;">
+                <div>
+                  <div style="font-weight:600;color:var(--text-main);margin-bottom:4px;">Cyber Runner v1.0.0</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Platform: PS5, PC | Size: 3.8GB</div>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Submitted: Apr 28, 2026 | Status: Processing</div>
+                </div>
+                <span class="status-badge status-testing">Processing</span>
+              </div>
+              <div style="margin-top:8px;">
+                <div style="height:6px;border-radius:3px;background:var(--bg-body);overflow:hidden;">
+                  <div style="width:35%;height:100%;background:var(--accent-cyan);border-radius:3px;"></div>
+                </div>
+                <div style="font-size:0.75rem;color:var(--text-muted);margin-top:4px;">Build validation: 35% complete</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Section 2: Upload New Build -->
+        <div class="dash-panel">
+          <h4>Upload New Build</h4>
+          <div style="display:flex;flex-direction:column;gap:16px;">
+            <div style="border:2px dashed var(--border-color);border-radius:var(--radius-sm);padding:32px;text-align:center;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin:0 auto 16px;color:var(--text-muted);"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <div style="font-weight:600;color:var(--text-main);margin-bottom:8px;">Drop build files here or click to browse</div>
+              <div style="font-size:0.78rem;color:var(--text-muted);margin-bottom:16px;">Supports: .zip, .rar, .7z (Max 10GB)</div>
+              <button class="btn btn-primary">Choose Files</button>
+            </div>
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Build Name</label>
+              <input type="text" placeholder="Enter build name" style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+            </div>
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Version</label>
+              <input type="text" placeholder="e.g., v1.0.0" style="width:100%;padding:8px;border:1px solid var(--border-color);border-radius:var(--radius-sm);background:var(--bg-body);color:var(--text-main);">
+            </div>
+            <div>
+              <label style="font-size:0.85rem;color:var(--text-muted);display:block;margin-bottom:4px;">Platforms</label>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+                <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;">
+                  <input type="checkbox"> PC/Steam
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;">
+                  <input type="checkbox"> PlayStation 5
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;">
+                  <input type="checkbox"> Xbox Series X
+                </label>
+                <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;">
+                  <input type="checkbox"> Nintendo Switch
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" style="width:100%;">Submit Build</button>
+          </div>
+        </div>
+        
+        <!-- Section 3: Build History -->
+        <div class="dash-panel">
+          <h4>Build History</h4>
+          <div style="overflow-x:auto;">
+            <table class="data-table">
+              <thead><tr><th>Build</th><th>Platform</th><th>Submitted</th><th>Status</th><th>Actions</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td>Neon Abyss v0.9.4</td>
+                  <td>PC, Switch</td>
+                  <td>May 5, 2026</td>
+                  <td><span class="status-badge status-testing">Testing</span></td>
+                  <td>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 8px;">View</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Iron Harvest v1.1.0</td>
+                  <td>PS5, PC</td>
+                  <td>May 2, 2026</td>
+                  <td><span class="status-badge status-testing">Testing</span></td>
+                  <td>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 8px;">View</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Starlight Drift v2.0.1</td>
+                  <td>iOS, Android</td>
+                  <td>Apr 28, 2026</td>
+                  <td><span class="status-badge status-completed">Completed</span></td>
+                  <td>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 8px;">View</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pixel Knights v0.8.2</td>
+                  <td>Xbox, PC</td>
+                  <td>Apr 25, 2026</td>
+                  <td><span class="status-badge status-pending">Pending</span></td>
+                  <td>
+                    <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 8px;">View</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Overview (Default) -->
+    <div class="dash-section" id="dashboard-overview">
+      <!-- Original dashboard content remains here -->
     </div>
   </main>
 
@@ -269,6 +1576,51 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    // Dashboard Navigation
+    $(function() {
+      // Hide all sections except overview
+      $('.dash-section').hide();
+      $('#dashboard-overview').show();
+      
+      // Handle navigation clicks
+      $('.sidebar-nav a, .mobile-nav a').on('click', function(e) {
+        e.preventDefault();
+        
+        // Get section ID from href
+        const sectionId = $(this).attr('href').replace('#', '');
+        
+        // Hide all sections
+        $('.dash-section').hide();
+        
+        // Show selected section
+        if (sectionId === 'dashboard') {
+          $('#dashboard-overview').show();
+        } else {
+          $('#' + sectionId).show();
+        }
+        
+        // Update active state
+        $('.sidebar-nav a, .mobile-nav a').removeClass('active');
+        $(this).addClass('active');
+        
+        // Close mobile drawer if open
+        $('.mobile-drawer').removeClass('open');
+        $('#mobile-overlay').removeClass('open');
+        $('body').css('overflow', '');
+        $('#hamburger').removeClass('active');
+      });
+      
+      // Set active nav item based on current hash
+      const currentHash = window.location.hash.replace('#', '') || 'dashboard';
+      $('.sidebar-nav a[href="#' + currentHash + '"], .mobile-nav a[href="#' + currentHash + '"]').addClass('active');
+      
+      if (currentHash !== 'dashboard') {
+        $('.dash-section').hide();
+        $('#' + currentHash).show();
+      }
+    });
+  </script>
   <script>
     $(function(){
       // Dashboard sidebar toggle
