@@ -442,6 +442,124 @@ ul,ol { list-style:none; }
   line-height: 1.5;
 }
 
+/* ---------- Certification Cards ---------- */
+.cert-card {
+  background: rgba(20,22,35,0.6);
+  border: 1px solid rgba(0,240,255,0.1);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0,240,255,0.3);
+  box-shadow: 0 10px 30px rgba(0,240,255,0.2);
+}
+
+.cert-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.cert-card h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.cert-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ---------- Project Cards ---------- */
+.project-card {
+  background: rgba(20,22,35,0.8);
+  border: 1px solid rgba(139,92,246,0.1);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139,92,246,0.3);
+  box-shadow: 0 15px 40px rgba(139,92,246,0.2);
+}
+
+.project-content {
+  padding: 24px;
+}
+
+.project-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+
+.project-meta {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.project-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.stat {
+  text-align: center;
+  padding: 12px;
+  background: rgba(0,240,255,0.05);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0,240,255,0.1);
+}
+
+.stat-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-cyan);
+  font-family: var(--font-heading);
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
 /* ---------- Glass Cards (Home 2) ---------- */
 .glass-card {
   background: rgba(15,17,26,0.55);
