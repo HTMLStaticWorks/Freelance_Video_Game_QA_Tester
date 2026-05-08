@@ -248,12 +248,28 @@
   }
   
   /* Current Invoices Alignment Fix */
+  #payment-billing .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
   #payment-billing .card > div:first-child {
-    flex: 1;
+    flex: 1 1 200px;
+  }
+  #payment-billing .card .status-badge {
+    margin-left: auto;
   }
   
   /* Topbar Alignment Fix */
   .dashboard-topbar {
     padding: 0 20px !important;
+  }
+  
+  /* Dashboard Title Centering */
+  .dash-section h3, .dashboard-main h1, .dash-panel h4 {
+    text-align: center !important;
+    margin-bottom: 30px !important;
   }
 }
