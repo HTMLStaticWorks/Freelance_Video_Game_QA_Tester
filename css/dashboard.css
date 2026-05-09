@@ -252,14 +252,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
+    text-align: left !important;
   }
   #payment-billing .card > div:first-child {
     flex: 1 1 200px;
   }
   #payment-billing .card .status-badge {
     margin-left: auto;
+  }
+
+  /* Notifications Alignment Fix */
+  #notifications .card {
+    text-align: left !important;
+  }
+  #notifications .card > div {
+    align-items: flex-start !important;
   }
   
   /* Topbar Alignment Fix */

@@ -307,7 +307,7 @@ ul,ol { list-style:none; }
 .footer-socials a:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); box-shadow:var(--neon-glow-cyan); }
 
 .footer-title { font-family: var(--font-heading); color:#fff; font-size:1rem; margin-bottom:18px; letter-spacing:1px; }
-.footer-links { margin-top: 16px; }
+.footer-links { margin-top: 16px; padding: 0; list-style: none; }
 .footer-links li { margin-bottom:10px; }
 .footer-links a { color: var(--text-muted); font-size:0.9rem; }
 .footer-links a:hover { color: #fff; padding-left:4px; }
