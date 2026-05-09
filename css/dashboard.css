@@ -14,11 +14,12 @@
 [dir="rtl"] .dashboard-sidebar { left:auto; right:0; border-right:none; border-left:1px solid var(--border-color); }
 
 .sidebar-brand {
-  display:flex; align-items:center; gap:10px; padding:0 24px 24px;
+  display:flex; align-items:center; padding:0 24px 24px;
   font-family: var(--font-heading); font-size:1.15rem; color: var(--text-main);
   border-bottom:1px solid var(--border-color); margin-bottom:16px;
   text-decoration: none;
 }
+.sidebar-brand svg { margin-right: 10px; }
 .sidebar-brand span { color: var(--accent-cyan); }
 
 .sidebar-nav li a {
